@@ -1,1 +1,31 @@
+body	{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100px 30px auto;
+	height: 100vh;
+	margin: 0;
+	background-color: red;
+	}
 
+header	{
+	background-color: lightgray;
+	grid-column: 1/-1;
+	grid-row: 1/2;
+	}
+nav		{
+	background-color: blue;
+	grid-column: 1/-1;
+	grid-row: 2/3;
+	padding: 5px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	list-style-type: none;
+	grid-gap: 5px;
+	}
+main	{
+	background-color: lightblue;
+	grid-column: 1/-1;
+	grid-row: 3/4;
+	padding: 5px;
+	}
